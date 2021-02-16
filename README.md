@@ -1,5 +1,5 @@
 # django-react-ecommerce
-Projeto de um site de ecommerce desenvolvido em ReactJS  no front com uma api em Django Rest Framework (Python).
+Projeto de um site de ecommerce desenvolvido em ReactJS  no front com uma api em Django Rest Framework (Python) no back end.
 
 ## Rodando o projeto
 
