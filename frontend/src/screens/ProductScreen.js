@@ -21,7 +21,7 @@ function ProductScreen({match}) {
     
     return (
         <>
-            <Link className='btn btn-light my-3' to='/'>Go Back</Link>
+            <Link className='btn btn-light my-3' to='/'>Voltar</Link>
 
             <Row>
                 <Col md={6}>
@@ -39,10 +39,10 @@ function ProductScreen({match}) {
                             />
                         </ListGroup.Item>
                         <ListGroup.Item>
-                            Price: ${product.price}
+                            Preço: R${product.price}
                         </ListGroup.Item>
                         <ListGroup.Item>
-                            Description: {product.description}
+                            Descrição: {product.description}
                         </ListGroup.Item>
                     </ListGroup>
                 </Col>
@@ -52,10 +52,10 @@ function ProductScreen({match}) {
                             <ListGroup.Item>
                                 <Row>
                                     <Col>
-                                        Price: 
+                                        Preço: 
                                     </Col>
                                     <Col>
-                                        <strong>${product.price}</strong>
+                                        <strong>R${product.price}</strong>
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
@@ -65,13 +65,13 @@ function ProductScreen({match}) {
                                         Status: 
                                     </Col>
                                     <Col>
-                                        {product.countInStock>0 ? 'In Stock': 'Out of Stock'}
+                                        {product.countInStock>0 ? 'Em estoque': 'Esgotado'}
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
                             <ListGroup.Item>
                                <Button className='btn-block' type='button' disabled={product.countInStock===0}>
-                                    Add to Cart
+                                    Adicionar ao carrinho
                                </Button>
                             </ListGroup.Item>
                         </ListGroup>
